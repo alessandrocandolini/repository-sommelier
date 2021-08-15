@@ -2,7 +2,7 @@
 
 # repository-sommelier
 
-A scala 3 / cats effect 3 / fs2 command line tool to taste the repos. 
+A Scala 3 / Cats-Effect 3 / fs2 command-line tool to taste sbt Scala repos. 
 
 Wish list of capabilities:
 * detect sbt version, scala version, dependencies 
@@ -11,6 +11,9 @@ Wish list of capabilities:
 
 Not sure yet if I want this program to also be responsible of downloading the repo and opening the PRs. In the MVP I will just assume the project is cloned. 
 
+## Why not using Scala-Steward
+
+Please use [Scala Steward](https://github.com/scala-steward-org/scala-steward) and not this project. I'm working on this project just for fun, and because sometimes i need a narrow set of more opinionated options compared to Scala Steward. 
 
 ## Run the tests
 
