@@ -16,3 +16,18 @@ lazy val root = (project in file("."))
     libraryDependencies ++= (dependencies ++ testDependencies)
   )
   .configs(IntegrationTest)
+
+/// sbt-github-actions configuration
+
+ThisBuild / crossScalaVersions := Seq(Versions.scala)
+ThisBuild / githubWorkflowTargetTags ++= Seq("v*")
+ThisBuild / githubWorkflowPublishTargetBranches := Seq(
+  RefPredicate.Equals(Ref.Branch("main"))
+)
+ThisBuild / githubWorkflowPublish := Seq(
+  WorkflowStep.Run(
+    List("sbt assembly"),
+    name = Some("Create and publish JARs")
+  )
+)
+ThisBuild / githubWorkflowJavaVersions := Seq("adopt@1.11")
