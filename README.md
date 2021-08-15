@@ -1,3 +1,5 @@
+[![Continuous Integration](https://github.com/alessandrocandolini/repository-sommelier/actions/workflows/ci.yml/badge.svg)](https://github.com/alessandrocandolini/repository-sommelier/actions/workflows/ci.yml)
+
 # repository-sommelier
 
 A scala 3 / cats effect 3 / fs2 command line tool to taste the repos. 
