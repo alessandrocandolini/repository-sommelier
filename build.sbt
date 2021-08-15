@@ -29,3 +29,4 @@ ThisBuild / githubWorkflowBuild :=
   Seq(
     WorkflowStep.Sbt(List("assembly"), name = Some("Build project"))
   )
+ThisBuild / githubWorkflowPublish := Seq()
