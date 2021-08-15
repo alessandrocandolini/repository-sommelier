@@ -1,5 +1,7 @@
 # repository-sommelier
 
+A scala 3 / cats effect 3 / fs2 command line tool to taste the repos. 
+
 Wish list of capabilities:
 * detect sbt version, scala version, dependencies 
 * update sbt version, scala version, dependencies through a number of heuristics (or through a more rigorous approach if feasible)
